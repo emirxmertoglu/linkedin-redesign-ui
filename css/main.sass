@@ -1,0 +1,96 @@
+@import 'reset'
+@import 'icon-font'
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap')
+
+\:root
+    --main-blue: #006699
+    --main-gray: #AAAAAA
+    --main-green: #31B057
+    --main-black: #17272F
+
+body
+    background: #F5F6F8
+
+.container
+    width: 1140px
+    margin: 0 auto
+
+.header
+    background: #fff
+    .container
+        height: 56px
+        display: flex
+        align-items: center
+        .search
+            margin-left: 18px
+            position: relative
+            i
+                position: absolute
+                top: 0
+                left: 0
+                width: 44px
+                height: 32px
+                display: flex
+                align-items: center
+                justify-content: center
+                color: var(--main-gray)
+            input
+                height: 32px
+                width: 312px
+                padding: 0px 15px 0 44px
+                background: rgba(222, 222, 222, .32)
+                border-radius: 4px
+                font-size: 14px
+                &::placeholder
+                    color: var(--main-gray)
+        .menu
+            margin: 0 auto
+            ul
+                display: flex
+                li
+                    a
+                        display: flex
+                        align-items: center
+                        justify-content: center
+                        color: var(--main-gray)
+                        i
+                            font-size: 20px
+                        span
+                            display: none
+                            margin-left: 6px
+                            font-size: 14px
+                            font-weight: 500
+                    &:not(:last-child)
+                        margin-right: 32px
+                    &.active
+                        a
+                            color: var(--main-blue)
+                            span
+                                display: block
+        .user-menu
+            a
+                display: flex
+                align-items: center
+                justify-content: center
+                .detail
+                    display: flex
+                    flex-direction: column
+                    text-align: right
+                    margin-right: 8px
+                    .name
+                        font-size: 12px
+                        font-weight: 500
+                        color: var(--main-black)
+                    .status
+                        font-size: 10px
+                        &.online
+                            color: var(--main-green)
+                img
+                    width: 24px
+                    min-width: 24px
+                    height: 24px
+                    border-radius: 50%
+                i
+                    margin-left: 5px
+                    font-size: 11px
+                    color: var(--main-gray)
