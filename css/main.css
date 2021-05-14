@@ -236,6 +236,10 @@ body {
   font-weight: 500;
 }
 
+.header .container .menu ul li a:hover {
+  color: var(--main-blue);
+}
+
 .header .container .menu ul li:not(:last-child) {
   margin-right: 32px;
 }
