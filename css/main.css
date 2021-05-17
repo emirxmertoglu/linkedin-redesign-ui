@@ -129,10 +129,13 @@
   --main-gray: #AAAAAA;
   --main-green: #31B057;
   --main-black: #17272F;
+  --main-white: #fff;
+  --border-bottom-color: #EDF0F5;
 }
 
 body {
   background: #F5F6F8;
+  font-size: 14px;
 }
 
 .container {
@@ -141,7 +144,8 @@ body {
 }
 
 .header {
-  background: #fff;
+  background: var(--main-white);
+  margin-bottom: 16px;
 }
 
 .header .container {
@@ -301,5 +305,164 @@ body {
   margin-left: 5px;
   font-size: 11px;
   color: var(--main-gray);
+}
+
+main .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .container .left-sidebar {
+  width: 270px;
+  min-width: 270px;
+}
+
+main .container .left-sidebar .widget {
+  background: var(--main-white);
+  border-radius: 6px;
+  padding: 15px;
+  margin-bottom: 16px;
+}
+
+main .container .left-sidebar .widget-stats {
+  padding: 8px;
+}
+
+main .container .left-sidebar .widget-stats .profile .cover {
+  height: 43px;
+  background: url(../img/cover-bg.png) no-repeat center center;
+  background-size: cover;
+  border-radius: 4px;
+}
+
+main .container .left-sidebar .widget-stats .profile .avatar {
+  margin-top: -26px;
+  margin-bottom: 8px;
+}
+
+main .container .left-sidebar .widget-stats .profile .avatar img {
+  width: 52px;
+  height: 52px;
+  border: 2px solid var(--main-white);
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+main .container .left-sidebar .widget-stats .profile .person {
+  text-align: center;
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid var(--border-bottom-color);
+}
+
+main .container .left-sidebar .widget-stats .profile .person .name {
+  font-size: 16px;
+  color: var(--main-black);
+  margin-bottom: 4px;
+}
+
+main .container .left-sidebar .widget-stats .profile .person .job-title {
+  font-size: 14px;
+  font-weight: normal;
+  color: var(--main-gray);
+}
+
+main .container .left-sidebar .widget-stats .profile-stats {
+  padding: 8px;
+}
+
+main .container .left-sidebar .widget-stats .profile-stats ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 14px;
+}
+
+main .container .left-sidebar .widget-stats .profile-stats ul li:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+main .container .left-sidebar .widget-stats .profile-stats ul li .count {
+  font-weight: 500;
+  color: var(--main-blue);
+}
+
+main .container .left-sidebar .widget-newest h6 {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--main-black);
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--border-bottom-color);
+  margin-bottom: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .container .left-sidebar .widget-newest h6 .dropdown a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px;
+  color: var(--main-green);
+  font-weight: normal;
+}
+
+main .container .left-sidebar .widget-newest h6 .dropdown a i {
+  font-size: 9px;
+  color: var(--main-gray);
+  margin-left: 4px;
+}
+
+main .container .left-sidebar .widget-newest ul:not(:last-child) {
+  margin-bottom: 36px;
+}
+
+main .container .left-sidebar .widget-newest ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: var(--main-blue);
+}
+
+main .container .left-sidebar .widget-newest ul li a i.icon-hash {
+  font-size: 12px;
+  margin-right: 5px;
+}
+
+main .container .left-sidebar .widget-newest ul li a i.icon-users {
+  margin-right: 8px;
+}
+
+main .container .content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin: 0 30px;
+}
+
+main .container .right-sidebar {
+  width: 270px;
+  min-width: 270px;
 }
 /*# sourceMappingURL=main.css.map */

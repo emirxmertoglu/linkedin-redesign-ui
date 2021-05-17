@@ -7,16 +7,20 @@
     --main-gray: #AAAAAA
     --main-green: #31B057
     --main-black: #17272F
+    --main-white: #fff
+    --border-bottom-color: #EDF0F5
 
 body
     background: #F5F6F8
+    font-size: 14px
 
 .container
     width: 1140px
     margin: 0 auto
 
 .header
-    background: #fff
+    background: var(--main-white)
+    margin-bottom: 16px
     .container
         height: 56px
         display: flex
@@ -96,3 +100,101 @@ body
                     margin-left: 5px
                     font-size: 11px
                     color: var(--main-gray)
+
+main
+    .container
+        display: flex
+        .left-sidebar
+            width: 270px
+            min-width: 270px
+            .widget
+                background: var(--main-white)
+                border-radius: 6px
+                padding: 15px
+                margin-bottom: 16px
+            .widget-stats
+                padding: 8px
+                .profile
+                    .cover
+                        height: 43px
+                        background: url(../img/cover-bg.png) no-repeat center center
+                        background-size: cover
+                        border-radius: 4px
+                    .avatar
+                        margin-top: -26px
+                        margin-bottom: 8px
+                        img
+                            width: 52px
+                            height: 52px
+                            border: 2px solid var(--main-white)
+                            border-radius: 50%
+                            display: block
+                            margin: 0 auto
+                    .person
+                        text-align: center
+                        padding-bottom: 16px
+                        margin-bottom: 16px
+                        border-bottom: 1px solid var(--border-bottom-color)
+                        .name
+                            font-size: 16px
+                            color: var(--main-black)
+                            margin-bottom: 4px
+                        .job-title
+                            font-size: 14px
+                            font-weight: normal
+                            color: var(--main-gray)
+                .profile-stats
+                    padding: 8px
+                    ul
+                        li
+                            display: flex
+                            justify-content: space-between
+                            font-size: 14px
+                            &:not(:last-child)
+                                margin-bottom: 16px
+                            .count
+                                font-weight: 500
+                                color: var(--main-blue)
+            .widget-newest
+                h6
+                    font-size: 14px
+                    font-weight: 500
+                    color: var(--main-black)
+                    padding-bottom: 8px
+                    border-bottom: 1px solid var(--border-bottom-color)
+                    margin-bottom: 12px
+                    display: flex
+                    align-items: center
+                    justify-content: space-between
+                    .dropdown
+                        a
+                            display: flex
+                            justify-content: center
+                            align-items: center
+                            font-size: 14px
+                            color: var(--main-green)
+                            font-weight: normal
+                            i
+                                font-size: 9px
+                                color: var(--main-gray)
+                                margin-left: 4px
+                ul
+                    &:not(:last-child)
+                        margin-bottom: 36px
+                    li
+                        a
+                            display: flex
+                            align-items: center
+                            color: var(--main-blue)
+                            i
+                                &.icon-hash
+                                    font-size: 12px
+                                    margin-right: 5px
+                                &.icon-users
+                                    margin-right: 8px
+        .content
+            flex: 1
+            margin: 0 30px
+        .right-sidebar
+            width: 270px
+            min-width: 270px
