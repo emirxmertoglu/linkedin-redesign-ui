@@ -445,6 +445,10 @@ main .container .left-sidebar .widget-newest ul li a {
   color: var(--main-blue);
 }
 
+main .container .left-sidebar .widget-newest ul li a:hover {
+  color: #222;
+}
+
 main .container .left-sidebar .widget-newest ul li a i.icon-hash {
   font-size: 12px;
   margin-right: 5px;
@@ -452,6 +456,40 @@ main .container .left-sidebar .widget-newest ul li a i.icon-hash {
 
 main .container .left-sidebar .widget-newest ul li a i.icon-users {
   margin-right: 8px;
+}
+
+main .container .left-sidebar .widget-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50px;
+  color: var(--main-black);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+main .container .left-sidebar .widget-btn i {
+  color: var(--main-blue);
+}
+
+main .container .left-sidebar .widget-btn.more {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: var(--main-blue);
+  -webkit-transition: 300ms background-color, 300ms color;
+  transition: 300ms background-color, 300ms color;
+}
+
+main .container .left-sidebar .widget-btn.more:hover {
+  background: var(--main-blue);
+  color: var(--main-white);
 }
 
 main .container .content {

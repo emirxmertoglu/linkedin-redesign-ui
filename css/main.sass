@@ -186,12 +186,31 @@ main
                             display: flex
                             align-items: center
                             color: var(--main-blue)
+                            &:hover
+                                color: #222
                             i
                                 &.icon-hash
                                     font-size: 12px
                                     margin-right: 5px
                                 &.icon-users
                                     margin-right: 8px
+            .widget-btn
+                display: flex
+                justify-content: space-between
+                align-items: center
+                height: 50px
+                color: var(--main-black)
+                font-size: 14px
+                font-weight: 500
+                i
+                    color: var(--main-blue)
+                &.more
+                    justify-content: center
+                    color: var(--main-blue)
+                    transition: 300ms background-color, 300ms color
+                    &:hover
+                        background: var(--main-blue)
+                        color: var(--main-white)
         .content
             flex: 1
             margin: 0 30px
