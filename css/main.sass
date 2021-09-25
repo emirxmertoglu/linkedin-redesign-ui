@@ -104,7 +104,7 @@ body
 main
     .container
         display: flex
-        .left-sidebar
+        .sidebar
             width: 270px
             min-width: 270px
             .widget
@@ -112,6 +112,28 @@ main
                 border-radius: 6px
                 padding: 15px
                 margin-bottom: 16px
+                h6
+                    font-size: 14px
+                    font-weight: 500
+                    color: var(--main-black)
+                    padding-bottom: 8px
+                    border-bottom: 1px solid var(--border-bottom-color)
+                    margin-bottom: 12px
+                    display: flex
+                    align-items: center
+                    justify-content: space-between
+                    .dropdown
+                        a
+                            display: flex
+                            justify-content: center
+                            align-items: center
+                            font-size: 14px
+                            color: var(--main-green)
+                            font-weight: normal
+                            i
+                                font-size: 9px
+                                color: var(--main-gray)
+                                margin-left: 4px
             .widget-stats
                 padding: 8px
                 .profile
@@ -156,28 +178,6 @@ main
                                 font-weight: 500
                                 color: var(--main-blue)
             .widget-newest
-                h6
-                    font-size: 14px
-                    font-weight: 500
-                    color: var(--main-black)
-                    padding-bottom: 8px
-                    border-bottom: 1px solid var(--border-bottom-color)
-                    margin-bottom: 12px
-                    display: flex
-                    align-items: center
-                    justify-content: space-between
-                    .dropdown
-                        a
-                            display: flex
-                            justify-content: center
-                            align-items: center
-                            font-size: 14px
-                            color: var(--main-green)
-                            font-weight: normal
-                            i
-                                font-size: 9px
-                                color: var(--main-gray)
-                                margin-left: 4px
                 ul
                     &:not(:last-child)
                         margin-bottom: 36px
@@ -211,9 +211,62 @@ main
                     &:hover
                         background: var(--main-blue)
                         color: var(--main-white)
+            .widget-button
+                height: 40px
+                display: flex
+                align-items: center
+                justify-content: center
+                border-radius: 6px
+                font-size: 14px
+                font-weight: 500
+                color: var(--main-black)
+                transition: 300ms background-color, 300ms color
+                &:hover
+                    background: var(--main-blue)
+                    color: var(--main-white)
+            .widget-recommendation
+                ul
+                    li
+                        display: flex
+                        justify-content: space-between
+                        align-items: center
+                        margin-bottom: 16px
+                        a:first-child
+                            display: flex
+                            align-items: center
+                            .image
+                                min-width: 24px
+                                margin-right: 8px
+                                display: flex
+                                align-items: center
+                                justify-content: center
+                                img
+                                    max-width: 100%
+                            .detail
+                                display: flex
+                                flex-direction: column
+                                .name
+                                    font-size: 14px
+                                    font-weight: 500
+                                    color: var(--main-black)
+                                .alt-name
+                                    font-size: 12px
+                                    color: var(--main-gray)
+                                    padding-top: 3px
+                        a:last-child
+                            max-width: 24px
+                            width: 24px
+                            height: 24px
+                            border: 1px solid var(--main-blue)
+                            border-radius: 4px
+                            display: grid
+                            place-items: center
+                            font-size: 11px
+                            color: var(--main-blue)
+                            transition: 300ms background-color, 300ms color
+                            &:hover
+                                background: var(--main-blue)
+                                color: var(--main-white)
         .content
             flex: 1
             margin: 0 30px
-        .right-sidebar
-            width: 270px
-            min-width: 270px
